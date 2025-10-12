@@ -4,7 +4,7 @@
     import { useRouter } from 'vue-router'
 
     const router = useRouter();
-    const props = defineProps({
+    defineProps({
         rate: {
             type: Object,
             required: true
