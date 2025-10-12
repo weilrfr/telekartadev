@@ -1,11 +1,12 @@
 <script setup>
 import Button from '@/components/Button.vue';
+import { useRouter } from 'vue-router'
 </script>
 <template>
     <section>
         <div class="cont">
             <div>
-                <img src="../../assets/Telekarta_logo_main_color.png" alt="Telekarta Logo" />
+                <img src="../../assets/Telekarta_logo_main_color.png" alt="Telekarta Logo" @click="useRouter().push({ name: '/'});"/>
             </div>
             <div class="nav">
                 <ul>

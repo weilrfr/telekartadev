@@ -1,17 +1,15 @@
 <script setup>
 import CardItem from '@/components/CardItem.vue';
-import Pioner from '@/assets/pioner.png'
-import Master from '@/assets/master.png'
 const rates = [
     {
-        img: Pioner,
+        id: 'pioner',
+        img: () => import('@/assets/pioner.png'),
         title: 'Тариф Пионер',
-        routerLink: '/pioner',
     },
     {
-        img: Master,
+        id: 'master',
+        img: () => import('@/assets/master.png'),
         title: 'Тариф Мастер',
-        routerLink: '/master',
     },
 ]
 </script>

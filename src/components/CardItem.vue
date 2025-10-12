@@ -12,7 +12,8 @@
     });
 
     function goToRate(id) {
-        router.push({ name: 'rate', params: { id }});
+        router.push({ name: 'rates', params: { id }});
+        console.log(id);
     }
 
 </script>
@@ -24,7 +25,7 @@
                 <h3>{{ rate.title }}</h3>
             </div>
             <div>
-                <Button text="Подробнее о тарифе" @click="goToRate(rate.routerLink)"/>
+                <Button text="Подробнее о тарифе" @click="goToRate(rate.id)"/>
             </div>
         </div>
     </section>
