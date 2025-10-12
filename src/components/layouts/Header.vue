@@ -19,20 +19,10 @@ import Button from '@/components/Button.vue';
     </section>
 </template>
 <style scoped>
-    * {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
+
     section {
         display: flex;
         justify-content: center;
-    }
-    .cont {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 70%;
     }
     .cont img {
         width: 70%;

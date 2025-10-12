@@ -1,7 +1,83 @@
 <script setup>
-
+import Button from '@/components/Button.vue';
+import CardList from '@/components/CardList.vue';
 </script>
 
 <template>
-  
+  <section>
+    <div class="cont">
+      <div class="info">
+        <div>
+          <h1>Моментальная оплата</h1>
+          <p>Продление подписки</p>
+          <p>Уверенная зона покрытия России, Казахстана, Кыргызстана</p>
+        </div>
+        <div>
+          <img src="../assets/telekarta.png" alt="Telekarta TV" />
+        </div>
+        <div class="btn-cont">
+          <Button text="Оплатить" />
+          <Button text="Посмотреть тарифы" class="rate"/>
+        </div>
+      </div>
+      <div class="cards">
+        <CardList/>
+      </div>
+    </div>
+  </section>
 </template>
+<style scoped>
+  section {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    height: 79vh;
+  }
+  .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .info :nth-child(1) {
+    flex-basis: 50%;
+  }
+  .info :nth-child(1) h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: rgba(212, 15, 125, 1);
+    
+  }
+  .info :nth-child(1) p {
+    font-size: 1.2em;
+    line-height: 1.6;
+  }
+  .info > :nth-child(2) {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .info img {
+    width: 70%;
+  }
+  .info :nth-child(1) p:nth-child(4) {
+    font-size: 0.9em;
+    margin-top: 20px;
+  }
+  .rate {
+    background: white;
+    border-color: black;
+    border: 1px solid black;
+    color: black;
+  }
+
+  .btn-cont {
+    margin-top: 10vh;
+  }
+
+  .btn-cont > * {
+    margin: 0px 10px;
+    margin-bottom: 50px;
+  }
+</style>
