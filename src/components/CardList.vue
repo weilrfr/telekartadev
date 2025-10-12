@@ -1,4 +1,5 @@
 <script setup>
+import CardItem from '@/components/CardItem.vue';
 const rates = [
     {
         img: '',

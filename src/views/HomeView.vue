@@ -20,6 +20,7 @@ import CardList from '@/components/CardList.vue';
           <Button text="Посмотреть тарифы" class="rate"/>
         </div>
       </div>
+      
       <div class="cards">
         <CardList/>
       </div>
