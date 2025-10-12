@@ -1,0 +1,55 @@
+<script setup>
+import Button from '@/components/Button.vue';
+</script>
+<template>
+    <section>
+        <div class="cont">
+            <div>
+                <img src="../../assets/Telekarta_logo_main_color.png" alt="Telekarta Logo" />
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>
+                        Контакты
+                    </li>
+                    <li><Button text="Оплатить"/></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</template>
+<style scoped>
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    section {
+        display: flex;
+        justify-content: center;
+    }
+    .cont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+    }
+    .cont img {
+        width: 70%;
+    }
+    .cont :nth-child(1) {
+        flex-basis: 30%;
+    }
+    .cont :nth-child(2) {
+        flex-basis: 70%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .nav ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100px;
+        list-style-type: disc;
+    }
+</style>
