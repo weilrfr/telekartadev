@@ -4,7 +4,7 @@ import CardList from '@/components/CardList.vue';
 </script>
 
 <template>
-  <section>
+  <section id="sec1">
     <div class="cont">
       <div class="info">
         <div>
@@ -20,15 +20,14 @@ import CardList from '@/components/CardList.vue';
           <Button text="Посмотреть тарифы" class="rate"/>
         </div>
       </div>
-
-      <div class="cards">
-        <CardList/>
-      </div>
     </div>
+  </section>
+  <section>
+    <CardList/>
   </section>
 </template>
 <style scoped>
-  section {
+  #sec1 {
     display: flex;
     justify-content: center;
     margin-top: 50px;
@@ -80,5 +79,8 @@ import CardList from '@/components/CardList.vue';
   .btn-cont > * {
     margin: 0px 10px;
     margin-bottom: 50px;
+  }
+  .cards {
+    display: block;
   }
 </style>
