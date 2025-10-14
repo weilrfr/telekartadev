@@ -37,8 +37,7 @@
         flex-wrap: wrap;
         align-items: flex-end;
         width: 100%;
-        text-align: center;
-    }
+        text-align: center;    }
     .footer h1 {
         font-size: 2em;
         width: 100%;
@@ -54,5 +53,9 @@
     }
     .footer p {
         margin: 2px 0;
+    }
+    .footer p:nth-child(4) {
+        margin-top: 20px;
+        font-size: 0.9em;
     }
 </style>
