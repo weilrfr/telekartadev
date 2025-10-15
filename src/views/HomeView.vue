@@ -16,9 +16,7 @@ import CardList from '@/components/CardList.vue';
           <img src="../assets/telekarta.png" alt="Telekarta TV" />
         </div>
         <div class="btn-cont">
-          <a href="https://wa.me/+77772568800">
-            <Button text="Оплатить"/>
-          </a>
+          <Button text="Оплатить" @click="$router.push('/payment')"/>
           <Button text="Посмотреть тарифы" class="rate"/>
         </div>
       </div>
@@ -67,6 +65,13 @@ import CardList from '@/components/CardList.vue';
     font-size: 0.9em;
     margin-top: 20px;
   }
+  .rate:hover {
+    background: rgba(212, 15, 125, 1);
+    margin-top: 1px;
+    color: white;
+    transition: 300ms;
+    border: none;
+  }
   .rate {
     background: white;
     border-color: black;
@@ -75,13 +80,6 @@ import CardList from '@/components/CardList.vue';
     transition: 300ms;
   }
 
-  .rate:hover {
-    background: rgba(212, 15, 125, 1);
-    margin-top: 1px;
-    color: white;
-    transition: 300ms;
-    border: none;
-  }
 
   .btn-cont {
     margin-top: 10vh;

@@ -9,9 +9,8 @@ import Button from '@/components/Button.vue';
             </div>
             <div class="nav">
                 <ul>
-                    <li>
-                        Контакты
-                    </li>
+                    <li>Вызов мастера</li>
+                    <li>Контакты</li>
                     <li><Button text="Оплатить"/></li>
                 </ul>
             </div>
