@@ -1,18 +1,24 @@
 <script setup>
-
+import Button from '@/components/Button.vue';
 </script>
 <template>
     <section>
         <div class="cont">
+            <h1>Telekartatv</h1>
             <div class="footer">
-                <h1>Telekartatv</h1>
                 <div>
-                    <p>+7 (965) 354 37 37</p>
-                    <p>+7 (962) 821 37 37</p>
-                    <p>+7 (963) 521 37 37</p>
-                    <p>© 2025 Партнеры спутникового телевидения |  Уверенная зона покрытия России, Казахстана, Кыргызстана</p>
+                    <img src="@/assets/equipment.png" alt="logo" />
+                    <p>ДОСТАВКА СПУТНИКОВОГО ОБОРУДОВАНИЯ ПОД ЗАКАЗ !</p>
+                </div>
+                <div>
+                    <p>+7 (777) 256 88 00</p>
+                    <p>+7 (747) 154 37 37</p>
+                    <a href="https://wa.me/+77772568800?text=Здравствуйте!%20Я%20хочу%20активировать%20карту%20Телекарта." target="_blank" rel="noopener noreferrer">
+                        <i class="pi pi-whatsapp btn"/>
+                    </a>
                 </div>
             </div>
+            <p>© 2025 Партнеры спутникового телевидения |  Уверенная зона покрытия России, Казахстана, Кыргызстана</p>
         </div>
     </section>
 </template>
@@ -34,11 +40,12 @@
     .footer {
         display: flex;
         background-color: rgba(212, 15, 125, 1);
-        flex-wrap: wrap;
         align-items: flex-end;
         width: 100%;
-        text-align: center;    }
-    .footer h1 {
+        text-align: center;
+        margin-bottom: 50px;    
+    }
+    .cont h1 {
         font-size: 2em;
         width: 100%;
         text-align: center;
@@ -57,5 +64,16 @@
     .footer p:nth-child(4) {
         margin-top: 20px;
         font-size: 0.9em;
+    }
+    .cont > p {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+    .btn {
+        background-color: green;
+        border-radius: 50px;
+        font-size: 2em;
+        margin-top: 20px;
+        cursor: pointer;
     }
 </style>

@@ -1,9 +1,20 @@
 <script setup>
 import Button from '@/components/Button.vue';
 import CardList from '@/components/CardList.vue';
+import Carousel from '@/components/Carousel.vue';
+const scrollToTarget = () => {
+  const targetElement = document.getElementById('target-el');
+  
+  if (targetElement) {
+    targetElement.scrollIntoView({
+      behavior: 'smooth'
+    });
+  }
+};
 </script>
 
 <template>
+  <Carousel/>
   <section id="sec1">
     <div class="cont">
       <div class="info">
@@ -17,13 +28,14 @@ import CardList from '@/components/CardList.vue';
         </div>
         <div class="btn-cont">
           <Button text="Оплатить" @click="$router.push('/payment')"/>
-          <Button text="Посмотреть тарифы" class="rate"/>
+          <Button text="Частоты каналов" @click="$router.push('/frequencies')"/>
+          <Button text="Посмотреть тарифы" class="rate" @click="scrollToTarget"/>
         </div>
       </div>
     </div>
   </section>
   <section>
-    <CardList/>
+    <CardList id="target-el"/>
   </section>
 </template>
 <style scoped>
@@ -31,6 +43,7 @@ import CardList from '@/components/CardList.vue';
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    flex-wrap: wrap;
     height: 79vh;
   }
   .info {

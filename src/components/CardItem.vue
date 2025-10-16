@@ -2,16 +2,20 @@
     import { defineProps } from 'vue';
     import Button from '@/components/Button.vue';
     import { useRouter } from 'vue-router'
+    const router = useRouter();
     defineProps({
         rate: {
             type: Object,
             required: true
         }
     });
+    function goToRate(id) {
+        router.push({ name: 'rates', params: { id }});
+    }
 </script>
 <template>
     <section>
-        <div class="card">
+        <div class="card" @click="goToRate(rate.id)">
             <div>
                 <img :src="rate.img" :alt="rate.title" />
                 <h3>{{ rate.title }}</h3>

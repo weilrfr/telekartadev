@@ -1,19 +1,15 @@
 <script setup>
     import CardItem from '@/components/CardItem.vue';
-    import { useRouter } from 'vue-router'
     import { useRates } from '@/composable/useRates.js';
 
-    const router = useRouter();
     const { rates } = useRates();
-    function goToRate(id) {
-        router.push({ name: 'rates', params: { id }});
-    }
+
 </script>
 <template>
     <section class="card-list">        
         <div class="cards">
             <div v-for="rate in rates" :key="rate.title">
-                <CardItem :rate="rate" @click="goToRate(rate.id)"/>
+                <CardItem :rate="rate"/>
             </div>
         </div>
     </section>
