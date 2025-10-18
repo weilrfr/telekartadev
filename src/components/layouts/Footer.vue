@@ -4,7 +4,7 @@ import Button from '@/components/Button.vue';
 <template>
     <section>
         <div class="cont">
-            <h1>Telekartatv</h1>
+            <h1>TelekartaTV</h1>
             <div class="footer">
                 <div>
                     <img src="@/assets/equipment.png" alt="logo" />
@@ -35,6 +35,7 @@ import Button from '@/components/Button.vue';
         justify-content: center;
         align-items: center;
         width: 100%;
+        flex-wrap: wrap;
         max-width: 1300px;
     }
     .footer {

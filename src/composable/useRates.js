@@ -36,6 +36,7 @@ export const useRates = () => {
         {
             id: 'premierasd',
             img: Premier,
+            imgСhannels: PremierСhannels,
             title: 'Народный премьер',
         },
         {

@@ -109,10 +109,10 @@
         background-color: rgba(212, 15, 125, 1);
         width: 100%;
         transition: 300ms;
+        color: white;
     }
     .w-button a {
         text-decoration: none;
-        color: black;
         width: 100%;
     }
     .w-button button:hover {

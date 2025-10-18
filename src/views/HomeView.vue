@@ -24,7 +24,7 @@ const scrollToTarget = () => {
           <p>Уверенная зона покрытия России, Казахстана, Кыргызстана</p>
         </div>
         <div>
-          <img src="../assets/telekarta.png" alt="Telekarta TV" />
+          <img src="../assets/Telekarta_logo_main_color.png" alt="Telekarta TV" />
         </div>
         <div class="btn-cont">
           <Button text="Оплатить" @click="$router.push('/payment')"/>

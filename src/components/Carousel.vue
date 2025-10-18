@@ -78,6 +78,10 @@ const cities = ref([
   letter-spacing: 1px;
 }
 
+.city-name:hover {
+  cursor: default;
+}
+
 .carousel-track:hover {
   animation-play-state: paused;
 }

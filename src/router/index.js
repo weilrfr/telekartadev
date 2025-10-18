@@ -24,11 +24,20 @@ const router = createRouter({
       component: () => import('@/views/FrequenciesView.vue'),
     },
     {
+      path: '/callTheMaster',
+      name: 'call-the-master',
+      component: () => import('@/views/CallTheMasterView.vue'),
+    },
+    {
       path: '/:pathMatch(.*)*',
       name: 'not-found',
       component: () => import('@/views/NotFoundPage.vue')
     },
   ],
+  scrollBehavior (to, from, savedPosition) {
+  return { top: 0 }; 
+  // или return { top: 0 }; для Vue Router 4
+}
 })
 
 export default router
