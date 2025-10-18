@@ -15,12 +15,18 @@ import Button from '@/components/Button.vue';
             </div>
             <div class="nav">
                 <ul>
-                    <li class="master-call-button"> 
-                        <Button text="Вызов мастера" @click="$router.push('/callTheMaster')" class="animated-master-button"/>
+                    <li>Проверить подписку телекарты вы можете, отправив фотографию с номером карты в WhatsApp</li>
+                    <li>
+                        <a href="https://wa.me/+77772568800?text=Здравствуйте!%20Я%20хочу%20активировать%20карту%20Телекарта." target="_blank" rel="noopener noreferrer">
+                        <i class="pi pi-whatsapp btn"/>
+                    </a>
                     </li>
                     <li class="contacts">
                         <span>+7 (777) 256 88 00</span>
                         <span>+7 (747) 154 37 37</span>
+                    </li>
+                    <li class="master-call-button"> 
+                        <Button text="Вызов мастера" @click="$router.push('/callTheMaster')" class="animated-master-button"/>
                     </li>
                     <li><Button text="Оплатить" @click="$router.push('/payment')"/></li>
                 </ul>
