@@ -14,6 +14,10 @@ const telekartaFrequencies = [
   { freq: '11544', pol: 'V', sr: '45000', fec: '4/5', standard: 'DVB-S/MPEG-2' },
   { freq: '11606', pol: 'H', sr: '45000', fec: '4/5', standard: 'DVB-S2/MPEG-4' },
   { freq: '11606', pol: 'V', sr: '45000', fec: '4/5', standard: 'DVB-S2/MPEG-4' },
+
+  { freq: '11169', pol: 'V', sr: '35010', fec: '3/4', standard: 'DVB-S2/MPEG-4' },
+  { freq: '12535', pol: 'H', sr: '30000', fec: '2/3', standard: 'DVB-S2/MPEG-4' },
+  { freq: '12591', pol: 'H', sr: '30000', fec: '2/3', standard: 'DVB-S2/MPEG-4' },
 ];
 </script>
 
@@ -22,7 +26,7 @@ const telekartaFrequencies = [
         <div class="cont">
             <div class="map">
                 <h1>Частоты Телекарта ТВ</h1>
-                <img src="@/assets/zona.png" alt="Frequencies Telekarta TV" />
+                <img src="@/assets/Map_all.jpg" alt="Frequencies Telekarta TV" />
             </div>
             <div class="frequencies">
                 <table>

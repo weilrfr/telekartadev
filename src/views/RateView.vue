@@ -15,7 +15,7 @@ const currentRate = computed(() => {
 
 <template>
     <section>
-        <div v-if="currentRate">
+        <div v-if="currentRate" class="rate-details">
             <h1>{{ currentRate.title }}</h1>
             <img :src="currentRate.imgСhannels" :alt="currentRate.title" />
             </div>
@@ -36,6 +36,7 @@ const currentRate = computed(() => {
         margin-bottom: 20px;
     }
     img {
+        width: 100%;
         max-width: 100%;
         height: auto;
         border: 1px solid rgba(212, 15, 125, 0.2);

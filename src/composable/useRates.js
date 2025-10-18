@@ -6,7 +6,7 @@ import Lider from '@/assets/lider.png';
 import LiderСhannels from '@/assets/lider2.png';
 import Premier from '@/assets/premier.png';
 import PremierСhannels from '@/assets/premier2.png';
-import Doppaketi from '@/assets/doppak.png';
+import Doppaketi from '@/assets/doppak2.png';
 export const useRates = () => {
         const rates = [
         {

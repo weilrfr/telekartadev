@@ -6,8 +6,10 @@ import Button from '@/components/Button.vue';
         <div class="cont">
             <div class="logo-partners">
                 <div class="partners">
-                    <p>Партнеры</p>
+                    <p>Официальные</p>
                     <img src="@/assets/partners.png"/>
+                    <p>Партнеры</p>
+
                 </div>
                 <img src="../../assets/Telekarta_logo_main_color.png" alt="Telekarta Logo" @click="$router.push('/')"/>
             </div>
@@ -81,12 +83,12 @@ import Button from '@/components/Button.vue';
     }
 
     .partners img {
-        width: 30%;
+        width: 20%;
     }
 
     .partners p {
-        margin-right: 10px;
-        font-size: 1.1em;
+        margin: 0 10px;
+        font-size: 1.2em;
     }
 
     .cont > :nth-child(1) {

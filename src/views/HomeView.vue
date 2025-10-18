@@ -28,7 +28,7 @@ const scrollToTarget = () => {
         </div>
         <div class="btn-cont">
           <Button text="Оплатить" @click="$router.push('/payment')"/>
-          <Button text="Частоты каналов" @click="$router.push('/frequencies')"/>
+          <Button text="Транспондеры | Частоты каналов" @click="$router.push('/frequencies')"/>
           <Button text="Посмотреть тарифы" class="rate" @click="scrollToTarget"/>
         </div>
       </div>
