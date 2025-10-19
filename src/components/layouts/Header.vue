@@ -41,8 +41,8 @@ import Button from '@/components/Button.vue';
 <style scoped>
     .partners img {
         width: 100%;
-        height: auto; /* Добавлено для сохранения пропорций */
-        max-width: 100px; /* Ограничение размера логотипа партнеров на широких экранах */
+        height: auto; 
+        max-width: 100px; 
     }
     .partners > * {
         flex-basis: 30%;
@@ -93,13 +93,13 @@ import Button from '@/components/Button.vue';
         flex-wrap: wrap;
     }
     
-    /* Адаптивные улучшения для .partners */
+
     .partners {
         display: flex;
         align-items: center;
         margin-right: 20px;
         flex-basis: 30%;
-        justify-content: center; /* Центрируем содержимое */
+        justify-content: center;
     }
     .logo-partners > img {
         flex-basis: 70%;
@@ -108,7 +108,7 @@ import Button from '@/components/Button.vue';
     .partners p {
         margin: 0 10px;
         font-size: 1.2em;
-        white-space: nowrap; /* Предотвращаем перенос текста на широких экранах */
+        white-space: nowrap; 
     }
 
     .cont > :nth-child(1) {
@@ -159,7 +159,6 @@ import Button from '@/components/Button.vue';
         font-size: 1.2vw;
     }
     
-    /* Адаптация для экранов меньше 1100px */
     @media (max-width: 1100px) {
         .nav ul li:nth-child(1) {
             font-size: 2vw;
@@ -175,30 +174,29 @@ import Button from '@/components/Button.vue';
         }
         .logo-partners {
             margin-bottom: 15px;
-            width: 100%; /* Добавлено */
-            justify-content: center; /* Добавлено */
+            width: 100%;
+            justify-content: center;
         }
         
-        /* Основные изменения для .partners: Вертикальное расположение */
+
         .partners {
             flex-basis: auto; 
-            flex-direction: column; /* Элементы "Официальные Партнеры" будут располагаться вертикально */
+            flex-direction: column; 
             margin-right: 0; 
             align-items: center; 
-            margin-bottom: 15px; /* Добавим небольшой отступ, чтобы отделить от логотипа Telekarta */
+            margin-bottom: 15px; 
         }
         
         .partners p {
-            font-size: 1.5em; /* Увеличиваем размер текста для лучшей читаемости в колонке */
+            font-size: 1.5em; 
             margin: 5px 0;
-            white-space: normal; /* Разрешаем перенос текста */
+            white-space: normal;
         }
         
         .partners img {
-            max-width: 150px; /* Увеличиваем размер логотипа партнера */
+            max-width: 150px;
             margin: 10px 0;
         }
-        /* Конец изменений для .partners */
 
         .nav ul {
             flex-direction: column; 
@@ -216,7 +214,6 @@ import Button from '@/components/Button.vue';
         }
     }
 
-    /* Адаптация для экранов меньше 500px */
     @media (max-width: 500px) {
         .nav ul li:nth-child(1) {
             font-size: 3vw;
@@ -228,21 +225,19 @@ import Button from '@/components/Button.vue';
             font-size: 2em;
         }
         .partners {
-            /* Переопределяем стили для самых маленьких экранов */
-            flex-direction: column; /* Сохраняем вертикальную компоновку */
+            flex-direction: column; 
             width: auto;
             margin: 0;
         }
         .partners p {
-            font-size: 1.1em; /* Уменьшаем текст */
+            font-size: 1.1em;
         }
         
         .partners img {
-             max-width: 80px; /* Уменьшаем логотип партнера */
+             max-width: 80px; 
         }
         
         .logo-partners {
-             /* width: 15%; */ /* Ваш изначальный, нелогичный стиль удален/проигнорирован, т.к. ломает макет */
              flex-wrap: nowrap;
              align-items: center;
         }

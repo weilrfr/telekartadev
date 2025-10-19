@@ -31,17 +31,11 @@
                         <a href="https://wa.me/+77772568800?text=Здравствуйте!%20Я%20хочу%20активировать%20карту%20Телекарта." target="_blank" rel="noopener noreferrer">
                             <button>Написать на ватсап<i class="pi pi-whatsapp"></i></button>
                         </a>
-                        <!-- <a href="https://wa.me/+77772568800?text=Здравствуйте!%20Я%20хочу%20активировать%20карту%20Телекарта." target="_blank" rel="noopener noreferrer">
-                            <i class="pi pi-whatsapp w-btn"/>
-                        </a> -->
                     </div>
                     <div class="w-button">
                         <a href="https://wa.me/+77471543737?text=Здравствуйте!%20Я%20хочу%20активировать%20карту%20Телекарта." target="_blank" rel="noopener noreferrer">
                             <button>Написать на ватсап<i class="pi pi-whatsapp"></i></button>
                         </a>
-                        <!-- <a href="https://wa.me/+77471543737?text=Здравствуйте!%20Я%20хочу%20активировать%20карту%20Телекарта." target="_blank" rel="noopener noreferrer">
-                            <i class="pi pi-whatsapp w-btn"/>
-                        </a> -->
                     </div>
                 </div>
             </div>
@@ -49,7 +43,6 @@
     </section>
 </template>
 <style scoped>
-    /* Исходные стили */
     .number p {
         white-space: nowrap;
     }
@@ -67,17 +60,17 @@
         margin-top: 50px;
     }
     
-    /* Адаптивные улучшения для payment-info (родитель info и payment) */
+
     .payment-info {
         display: flex;
         justify-content: center;
         margin-top: 50px;
         flex-wrap: wrap;
-        padding: 0 15px; /* Добавлен небольшой горизонтальный отступ для мобильных */
+        padding: 0 15px; 
     }
     .payment-info > div {
         flex-basis: 50%;
-        max-width: 50%; /* Добавлено, чтобы предотвратить растягивание на очень больших экранах */
+        max-width: 50%;
     }
     .info {
         border: 1px solid rgba(212, 15, 125, 0.2);
@@ -97,20 +90,20 @@
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         transition: transform 0.35s ease;
         text-align: center;
-        margin-left: 10px; /* Добавлен небольшой отступ между info и payment */
+        margin-left: 10px; 
     }
     
-    /* Адаптивные улучшения для содержимого payment */
+
     .payment > div {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
     }
     .payment > div > div{
-        /* flex-basis: 45%; */ /* Убран этот жесткий flex-basis для контейнеров */
-        display: flex; /* Обеспечиваем flex-контейнер для номера и кнопки */
-        flex-basis: 50%; /* На широких экранах они будут в 2 колонки */
-        padding: 5px; /* Добавлен небольшой паддинг */
+
+        display: flex;
+        flex-basis: 50%;
+        padding: 5px; 
         box-sizing: border-box;
     }
     .payment .number {
@@ -122,13 +115,13 @@
         align-items: center;
         gap: 10px;
         margin-top: 10px;
-        flex-grow: 1; /* Разрешаем занять всю доступную ширину */
-        flex-basis: auto; /* Более гибкое базирование */
-        margin: 5px; /* Добавлен отступ */
+        flex-grow: 1; 
+        flex-basis: auto; 
+        margin: 5px;
     }
     
     .w-button {
-        flex-direction: column; /* Кнопки будут вертикальными в своих колонках */
+        flex-direction: column;
         align-items: center;
     }
     
@@ -173,15 +166,14 @@
         margin-left: 10px;
         font-size: 1.2em;
     }
-    
-    /* Адаптация для экранов меньше 768px */
+
     @media (max-width: 768px) {
         .payment-info {
-            flex-direction: column; /* Элементы info и payment теперь вертикально */
+            flex-direction: column; 
             align-items: center;
         }
         .payment-info > div {
-            flex-basis: 100%; /* Занимают всю ширину */
+            flex-basis: 100%;
             max-width: 100%;
         }
         .payment {
@@ -189,26 +181,25 @@
         }
 
         .payment > div > div {
-             flex-basis: 100%; /* Номера и кнопки WhatsApp занимают всю ширину */
+             flex-basis: 100%;
         }
 
         .number p {
-            font-size: 4vw; /* Увеличен для читаемости на мобильных */
+            font-size: 4vw;
         }
         
         .w-button button {
             font-size: 1.1em;
         }
     }
-    
-    /* Адаптация для экранов меньше 550px */
+
     @media (max-width: 550px) {
         .number i {
             margin: 0;
         }
 
         .number p {
-            font-size: 5vw; /* Еще больше увеличим шрифт номера */
+            font-size: 5vw;
         }
 
         .w-button a:nth-child(1) {
