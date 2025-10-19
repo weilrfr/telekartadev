@@ -46,9 +46,6 @@
     .number p {
         white-space: nowrap;
     }
-    .w-button a:nth-child(2) {
-        display: none;
-    }
     .number p {
         font-size: 1.5vw;
     }
@@ -202,9 +199,6 @@
             font-size: 5vw;
         }
 
-        .w-button a:nth-child(1) {
-            display: none;
-        }
         .w-button a:nth-child(2) {
             display: flex;
             justify-content: center;
