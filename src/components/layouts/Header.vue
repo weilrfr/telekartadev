@@ -10,7 +10,7 @@ import Button from '@/components/Button.vue';
                     <img src="@/assets/partners.png"/>
                     <p>Партнеры</p>
                 </div>
-                <img src="../../assets/Telekarta_logo_main_color.png" alt="Telekarta Logo" @click="$router.push('/')"/>
+                <img src="../../assets/Telekarta_logo_main_color.png" alt="Telekarta Logo" @click="$router.push('/')" class="logo-img"/>
             </div>
             <div class="nav">
                 <ul>
@@ -39,8 +39,14 @@ import Button from '@/components/Button.vue';
     </section>
 </template>
 <style scoped>
-
-
+    .partners img {
+        width: 100%;
+        height: auto; /* Добавлено для сохранения пропорций */
+        max-width: 100px; /* Ограничение размера логотипа партнеров на широких экранах */
+    }
+    .partners > * {
+        flex-basis: 30%;
+    }
     .animated-master-button {
         display: inline-flex;
         align-items: center;
@@ -72,8 +78,8 @@ import Button from '@/components/Button.vue';
         box-shadow: 0 2px 5px rgba(212, 15, 125, 0.2); 
     }
 
-    img {
-        width: 70%;
+    .logo-img {
+        width: 30%;
     }
 
     section {
@@ -86,22 +92,23 @@ import Button from '@/components/Button.vue';
         justify-content: center;
         flex-wrap: wrap;
     }
+    
+    /* Адаптивные улучшения для .partners */
     .partners {
         display: flex;
         align-items: center;
         margin-right: 20px;
         flex-basis: 30%;
+        justify-content: center; /* Центрируем содержимое */
     }
     .logo-partners > img {
         flex-basis: 70%;
-    }
-    .partners img {
-        width: 20%;
     }
 
     .partners p {
         margin: 0 10px;
         font-size: 1.2em;
+        white-space: nowrap; /* Предотвращаем перенос текста на широких экранах */
     }
 
     .cont > :nth-child(1) {
@@ -151,6 +158,8 @@ import Button from '@/components/Button.vue';
     .nav ul li:nth-child(1) {
         font-size: 1.2vw;
     }
+    
+    /* Адаптация для экранов меньше 1100px */
     @media (max-width: 1100px) {
         .nav ul li:nth-child(1) {
             font-size: 2vw;
@@ -166,7 +175,31 @@ import Button from '@/components/Button.vue';
         }
         .logo-partners {
             margin-bottom: 15px;
+            width: 100%; /* Добавлено */
+            justify-content: center; /* Добавлено */
         }
+        
+        /* Основные изменения для .partners: Вертикальное расположение */
+        .partners {
+            flex-basis: auto; 
+            flex-direction: column; /* Элементы "Официальные Партнеры" будут располагаться вертикально */
+            margin-right: 0; 
+            align-items: center; 
+            margin-bottom: 15px; /* Добавим небольшой отступ, чтобы отделить от логотипа Telekarta */
+        }
+        
+        .partners p {
+            font-size: 1.5em; /* Увеличиваем размер текста для лучшей читаемости в колонке */
+            margin: 5px 0;
+            white-space: normal; /* Разрешаем перенос текста */
+        }
+        
+        .partners img {
+            max-width: 150px; /* Увеличиваем размер логотипа партнера */
+            margin: 10px 0;
+        }
+        /* Конец изменений для .partners */
+
         .nav ul {
             flex-direction: column; 
             width: 100%;
@@ -183,6 +216,7 @@ import Button from '@/components/Button.vue';
         }
     }
 
+    /* Адаптация для экранов меньше 500px */
     @media (max-width: 500px) {
         .nav ul li:nth-child(1) {
             font-size: 3vw;
@@ -194,14 +228,25 @@ import Button from '@/components/Button.vue';
             font-size: 2em;
         }
         .partners {
-            margin-right: 10px;
+            /* Переопределяем стили для самых маленьких экранов */
+            flex-direction: column; /* Сохраняем вертикальную компоновку */
+            width: auto;
+            margin: 0;
         }
-        .partners {
-            width: 15%;
+        .partners p {
+            font-size: 1.1em; /* Уменьшаем текст */
         }
+        
         .partners img {
-            width: 20px;
+             max-width: 80px; /* Уменьшаем логотип партнера */
         }
+        
+        .logo-partners {
+             /* width: 15%; */ /* Ваш изначальный, нелогичный стиль удален/проигнорирован, т.к. ломает макет */
+             flex-wrap: nowrap;
+             align-items: center;
+        }
+        
         .logo-partners > img {
             width: 200px;
         }

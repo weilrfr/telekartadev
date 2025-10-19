@@ -2,7 +2,7 @@
 import { useRoute } from 'vue-router';
 import { computed } from 'vue';
 import { useRates } from '@/composable/useRates';
-
+import Button from '@/components/Button.vue';
 const route = useRoute();
 const rates = useRates().rates;
 const rateId = route.params.id;
@@ -21,6 +21,9 @@ const currentRate = computed(() => {
             </div>
         <div v-else>
             <p>Тариф не найден.</p>
+        </div>
+        <div>
+            <Button text="Вернуться на главную" @click="$router.push('/')"/>
         </div>
     </section>
 </template>

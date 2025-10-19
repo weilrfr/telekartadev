@@ -112,9 +112,10 @@ const scrollToTarget = () => {
     height: auto;
   }
 
-  
+
 
   @media (max-width: 768px) {
+
     #sec1 {
       height: auto;
     }
