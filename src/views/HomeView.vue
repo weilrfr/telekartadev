@@ -22,6 +22,8 @@ const scrollToTarget = () => {
           <h1>Моментальная оплата</h1>
           <p>Продление подписки</p>
           <p>Уверенная зона покрытия России, Казахстана, Кыргызстана</p>
+          <img src="/src/assets/kaspi.png"/>
+          <img src="/src/assets/halyk.jpg"/>
         </div>
         <div>
           <img src="../assets/Telekarta_logo_main_color.png" alt="Telekarta TV" />
@@ -99,10 +101,44 @@ const scrollToTarget = () => {
   }
 
   .btn-cont > * {
-    margin: 0px 10px;
+    margin-right: 20px;
     margin-bottom: 50px;
   }
   .cards {
     display: block;
+  }
+  .info img {
+    width: 10%;
+    height: auto;
+  }
+
+  
+
+  @media (max-width: 768px) {
+    #sec1 {
+      height: auto;
+    }
+    .info > :nth-child(1), .info > :nth-child(2) {
+      flex-basis: 100%;
+      text-align: center;
+      justify-content: center;
+    }
+    .info > :nth-child(2) {
+      margin-top: 20px;
+    }
+    .btn-cont {
+      margin-top: 5vh;
+      text-align: center;
+    }
+    .btn {
+      text-align: center;
+      margin-right: 10px;
+    }
+    .info img {
+      width: 10%;
+    }
+    .info {
+      flex-direction: column;
+    }
   }
 </style>

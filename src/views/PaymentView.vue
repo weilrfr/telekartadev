@@ -31,10 +31,16 @@
                         <a href="https://wa.me/+77772568800?text=Здравствуйте!%20Я%20хочу%20активировать%20карту%20Телекарта." target="_blank" rel="noopener noreferrer">
                             <button>Написать на ватсап<i class="pi pi-whatsapp"></i></button>
                         </a>
+                        <a href="https://wa.me/+77772568800?text=Здравствуйте!%20Я%20хочу%20активировать%20карту%20Телекарта." target="_blank" rel="noopener noreferrer">
+                            <i class="pi pi-whatsapp w-btn"/>
+                        </a>
                     </div>
                     <div class="w-button">
                         <a href="https://wa.me/+77471543737?text=Здравствуйте!%20Я%20хочу%20активировать%20карту%20Телекарта." target="_blank" rel="noopener noreferrer">
                             <button>Написать на ватсап<i class="pi pi-whatsapp"></i></button>
+                        </a>
+                        <a href="https://wa.me/+77471543737?text=Здравствуйте!%20Я%20хочу%20активировать%20карту%20Телекарта." target="_blank" rel="noopener noreferrer">
+                            <i class="pi pi-whatsapp w-btn"/>
                         </a>
                     </div>
                 </div>
@@ -43,6 +49,15 @@
     </section>
 </template>
 <style scoped>
+    .number p {
+        white-space: nowrap;
+    }
+    .w-button a:nth-child(2) {
+        display: none;
+    }
+    .number p {
+        font-size: 1.5vw;
+    }
     .hs {
         display: flex;
         flex-direction: column;
@@ -139,5 +154,31 @@
     .w-button i {
         margin-left: 10px;
         font-size: 1.2em;
+    }
+    @media (max-width: 768px) {
+        .number p {
+            font-size: 2vw;
+        }
+    }
+    @media (max-width: 550px) {
+        .number i {
+            margin: 0;
+        }
+
+        .w-button a:nth-child(1) {
+            display: none;
+        }
+        .w-button a:nth-child(2) {
+            display: flex;
+            justify-content: center;
+        }
+        .w-btn {
+            background-color: green;
+            border-radius: 50px;
+            font-size: 2em;
+            margin-top: 20px;
+            color: white;
+            cursor: pointer;
+        }
     }
 </style>

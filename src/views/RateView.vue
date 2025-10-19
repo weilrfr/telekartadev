@@ -34,12 +34,12 @@ const currentRate = computed(() => {
     h1 {
         color: rgba(212, 15, 125, 1);
         margin-bottom: 20px;
+        text-align: center;
     }
     img {
         width: 100%;
         max-width: 100%;
         height: auto;
-        border: 1px solid rgba(212, 15, 125, 0.2);
         border-radius: 10px;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     }   
