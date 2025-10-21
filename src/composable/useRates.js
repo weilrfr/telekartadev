@@ -6,7 +6,10 @@ import Lider from '@/assets/lider.png';
 import LiderСhannels from '@/assets/lider2.png';
 import Premier from '@/assets/premier.png';
 import PremierСhannels from '@/assets/premier2.png';
-import Doppaketi from '@/assets/doppak2.png';
+import Doppaket from '@/assets/doppaketi.png';
+import DoppaketiChannels from '@/assets/doppak2.png';
+import NarPremier from '@/assets/narpremier.png';
+import Multiroom from '@/assets/multiroom.png';
 export const useRates = () => {
         const rates = [
         {
@@ -35,19 +38,19 @@ export const useRates = () => {
         },
         {
             id: 'premierasd',
-            img: Premier,
+            img: NarPremier,
             imgСhannels: PremierСhannels,
             title: 'Народный премьер',
         },
         {
             id: 'multiroom',
-            img: Lider,
+            img: Multiroom,
             title: 'Мультирум',
         },
         {
             id: 'doppaketi',
-            img: Master,
-            imgСhannels: Doppaketi,
+            img: Doppaket,
+            imgСhannels: DoppaketiChannels,
             title: 'Дополнительные пакеты',
         }
     ];

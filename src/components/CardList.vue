@@ -20,6 +20,17 @@
         justify-content: center;
         width: 100%;
     }
+
+    .cards > div {
+        flex-basis: 23%;
+    }
+                                                                                    
+    .cards > div:nth-child(5):deep(.card img),
+    .cards > div:nth-child(6):deep(.card img),
+    .cards > div:nth-child(7):deep(.card img) {
+        width: 50%;
+    }
+
     .cards {
         display: flex;
         justify-content: space-around;

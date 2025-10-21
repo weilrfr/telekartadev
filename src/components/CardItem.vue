@@ -17,7 +17,7 @@
     <section>
         <div class="card" @click="goToRate(rate.id)">
             <div>
-                <img :src="rate.img" :alt="rate.title" />
+                <img :src="rate.img" :alt="rate.title" class="rate-img" />
                 <h3>{{ rate.title }}</h3>
             </div>
             <div>
