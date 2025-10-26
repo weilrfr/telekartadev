@@ -17,21 +17,19 @@ import Button from '@/components/Button.vue';
                     <li>Проверить подписку телекарты вы можете, отправив фотографию с номером карты в WhatsApp</li>
                     <li class="contacts">
                         <div class="w-btns">
-                            <a href="https://wa.me/+77772568800?text=Здравствуйте!%20Я%20хочу%20активировать%20карту%20Телекарта." target="_blank" rel="noopener noreferrer">
+                            <a href="https://wa.me/+77471543737?text=Здравствуйте!%20Я%20хочу%20активировать%20карту%20Телекарта." target="_blank" rel="noopener noreferrer">
                                 <i class="pi pi-whatsapp w-btn"/>
                             </a>
-                            <a href="https://wa.me/+77471543737?text=Здравствуйте!%20Я%20хочу%20активировать%20карту%20Телекарта." target="_blank" rel="noopener noreferrer">
+                            <a href="https://wa.me/+77772568800?text=Здравствуйте!%20Я%20хочу%20активировать%20карту%20Телекарта." target="_blank" rel="noopener noreferrer">
                                 <i class="pi pi-whatsapp w-btn"/>
                             </a>
                         </div>
                         <div class="numbers">
-                            <span>+7 (777) 256 88 00</span>
                             <span>+7 (747) 154 37 37</span>
+                            <span>+7 (777) 256 88 00</span>
                         </div>
                     </li>
-                    <li class="master-call-button"> 
-                        <Button text="Вызов мастера" @click="$router.push('/callTheMaster')" class="animated-master-button"/>
-                    </li>
+
                     <li><Button text="Оплатить" @click="$router.push('/payment')"/></li>
                 </ul>
             </div>
@@ -47,36 +45,7 @@ import Button from '@/components/Button.vue';
     .partners > * {
         flex-basis: 30%;
     }
-    .animated-master-button {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        padding: 12px 25px; 
-        border: none;
-        border-radius: 25px; 
-        font-weight: 700;
-        font-size: 1.1em;
-        cursor: pointer;
-        text-decoration: none; 
-        white-space: nowrap; 
-        transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); 
 
-        background-color: var(--brand-color); 
-        color: var(--white); 
-        
-        box-shadow: 0 5px 15px rgba(212, 15, 125, 0.4); 
-    }
-
-    .animated-master-button:hover {
-        background-color: var(--brand-color-dark);
-        box-shadow: 0 8px 20px rgba(212, 15, 125, 0.6); 
-        transform: translateY(-3px); 
-    }
-
-    .animated-master-button:active {
-        transform: translateY(0); 
-        box-shadow: 0 2px 5px rgba(212, 15, 125, 0.2); 
-    }
 
     .logo-img {
         width: 30%;

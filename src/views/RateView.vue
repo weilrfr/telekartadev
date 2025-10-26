@@ -17,8 +17,14 @@ const currentRate = computed(() => {
     <section>
         <div v-if="currentRate" class="rate-details">
             <h1>{{ currentRate.title }}</h1>
-            <img :src="currentRate.imgСhannels" :alt="currentRate.title" />
+            <img v-if="currentRate.imgСhannels" :src="currentRate.imgСhannels" :alt="currentRate.title" />
+            <div v-else class="multiroom-info">
+                <p>Услуга «Мультирум» от «Телекарты» позволяет смотреть каналы спутникового ТВ на двух телевизорах.</p>
+                <p>Разные каналы одновременно: Вы можете смотреть разные каналы на обоих телевизорах, независимо друг от друга.</p>
+                <p>Скидка на второй телевизор: Для дополнительного ТВ предоставляются льготные условия и скидки на абонентскую плату.</p>
+                <p>Для получение более подробной информации вы можете позвонить по телефону или написать на Ватсап.</p>
             </div>
+        </div>
         <div v-else>
             <p>Тариф не найден.</p>
         </div>
@@ -45,5 +51,30 @@ const currentRate = computed(() => {
         height: auto;
         border-radius: 10px;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    }   
+    }
+    .multiroom-info {
+        background-color: #f8f8f8;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s, box-shadow 0.3s;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .multiroom-info:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .multiroom-info p {
+    margin-bottom: 15px;
+    line-height: 1.9;
+    font-size: 1.2rem; 
+    color: #333;
+    }
+    .multiroom-info p:last-child {
+        margin-bottom: 0;
+        font-style: italic;
+    }
 </style>

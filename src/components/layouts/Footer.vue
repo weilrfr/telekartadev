@@ -13,9 +13,13 @@ import Button from '@/components/Button.vue';
                 <div>
                     <p>+7 (777) 256 88 00</p>
                     <p>+7 (747) 154 37 37</p>
+                    <p>+7 (977) 967 03 94</p>
                     <a href="https://wa.me/+77772568800?text=Здравствуйте!%20Я%20хочу%20активировать%20карту%20Телекарта." target="_blank" rel="noopener noreferrer">
-                        <i class="pi pi-whatsapp btn"/>
+                        <i class="pi pi-whatsapp w-btn"/>
                     </a>
+                </div>
+                <div>
+                    <Button text="Вызов мастера" @click="$router.push('/callTheMaster')" class="animated-master-button"/>
                 </div>
             </div>
             <p>© 2025 Партнеры спутникового телевидения |  Уверенная зона покрытия России, Казахстана, Кыргызстана</p>
@@ -23,6 +27,35 @@ import Button from '@/components/Button.vue';
     </section>
 </template>
 <style scoped>
+    .animated-master-button {
+        display: inline-flex;
+        align-items: center;
+        background-color: white;
+        justify-content: center;
+        padding: 12px 25px; 
+        border: none;
+        border-radius: 25px; 
+        font-weight: 700;
+        font-size: 1.1em;
+        cursor: pointer;
+        text-decoration: none; 
+        white-space: nowrap; 
+        transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); 
+        box-shadow: 0 5px 15px rgba(212, 15, 125, 0.4);
+    }
+
+    .animated-master-button:hover {
+        background: rgba(212, 15, 125, 1);
+        box-shadow: 0 8px 20px rgba(212, 15, 125, 0.6); 
+        transform: translateY(-3px); 
+    }
+
+    .animated-master-button:active {
+        transform: translateY(0); 
+        box-shadow: 0 2px 5px rgba(212, 15, 125, 0.2); 
+    }
+
+
     section {
         display: flex;
         justify-content: center;
@@ -70,7 +103,7 @@ import Button from '@/components/Button.vue';
         font-size: 1.2em;
         margin-bottom: 20px;
     }
-    .btn {
+    .w-btn {
         background-color: green;
         border-radius: 50px;
         font-size: 2em;
