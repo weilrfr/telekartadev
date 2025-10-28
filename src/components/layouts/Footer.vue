@@ -94,6 +94,7 @@ import Button from '@/components/Button.vue';
     }
     .footer p {
         margin: 2px 0;
+        font-size: clamp(0.7rem, 1.3vw, 3rem);
     }
     .footer p:nth-child(4) {
         margin-top: 20px;
