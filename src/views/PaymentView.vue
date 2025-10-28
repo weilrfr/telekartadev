@@ -1,4 +1,6 @@
 <script setup>
+    import Button from '@/components/Button.vue'
+
     function copyNumber(number){
         navigator.clipboard.writeText(number);
     }
@@ -39,9 +41,15 @@
                 </div>
             </div>
         </div>
+        <div>
+            <Button text="Вернуться на главную" @click="$router.push('/')"/>
+        </div>
     </section>
 </template>
 <style scoped>
+    section > div:nth-child(3) {
+        text-align: center;
+    }
     .number p {
         white-space: nowrap;
     }
@@ -62,7 +70,8 @@
         justify-content: center;
         margin-top: 50px;
         flex-wrap: wrap;
-        padding: 0 15px; 
+        padding: 0 15px;
+        margin-bottom: 30px; 
     }
     .payment-info > div {
         flex-basis: 50%;

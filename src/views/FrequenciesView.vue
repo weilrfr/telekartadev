@@ -2,6 +2,8 @@
 import pdfPath1 from '@/assets/actyalnoe_PO_Evo_09_Conax.pdf';
 import pdfPath2 from '@/assets/actyalnoe_PO_EVO_09_HD_R2_Conax.pdf';
 import pdfPath3 from '@/assets/actyalnoe_PO_EVO_09_IR.pdf';
+import Button from '@/components/Button.vue'
+
 
 const telekartaFrequencies = [
   { freq: '10981', pol: 'V', sr: '45000', fec: '2/3', standard: 'DVB-S/MPEG-2' },
@@ -61,6 +63,9 @@ const telekartaFrequencies = [
                     <p>📄 Инструкция по обновлению ПО для цифрового спутникового приемника Телекарта EVO 09 HD (Irdeto)</p>
                 </a>
             </div>
+            <div>
+                <Button text="Вернуться на главную" @click="$router.push('/')"/>
+            </div>
         </div>
     </section>
 </template>
@@ -69,33 +74,30 @@ const telekartaFrequencies = [
         display: flex;
         justify-content: center;
     }
+
     .cont {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 85%;
-        max-width: 1200px; /* Ограничиваем максимальную ширину */
+        max-width: 1200px;
         flex-wrap: wrap;
         margin-top: 50px;
     }
     
-    /* УДАЛЯЕМ: ul li{ list-style-type: decimal; margin-top: 20px;} */
-    
     .frequencies {
         display: flex;
-        flex-basis: 100%;
-        flex-direction: column; /* Для заголовка и таблицы */
+        width: 100%;
+        flex-direction: column;
         align-items: center;
         margin-top: 50px;
     }
-
-    /* Добавляем контейнер для горизонтальной прокрутки на мобильных */
+    
     .table-container { 
         overflow-x: auto;
         width: 100%;
     }
 
-    /* Стили для таблицы */
     table {
         width: 100%;
         border-collapse: collapse;
@@ -105,6 +107,7 @@ const telekartaFrequencies = [
         border: 1px solid #ccc;
         padding: 10px 15px;
         text-align: center;
+        white-space: nowrap;
     }
     th {
         background-color: #f2f2f2;
@@ -125,6 +128,9 @@ const telekartaFrequencies = [
         max-width: 100%;
         height: auto;
     }
+    .map h1 {
+        text-align: center;
+    }
     .satellite-info {
         margin-top: 10px;
         font-style: italic;
@@ -136,7 +142,7 @@ const telekartaFrequencies = [
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        margin-top: 50px;
+        margin: 50px 0px;
     }
     .instructions a {
         margin: 5px 0;
@@ -147,5 +153,21 @@ const telekartaFrequencies = [
     }
     .instructions a p {
         margin: 0;
+    }
+
+    @media (max-width: 600px) {
+        th, td {
+            /* Уменьшаем горизонтальный padding для экономии места на узких экранах */
+            padding: 8px 10px; 
+            font-size: 0.85em; /* Немного уменьшаем шрифт */
+        }
+        
+        .map h1 {
+            font-size: 1.5em; /* Улучшение адаптивности для заголовка */
+        }
+        
+        .instructions a p {
+             font-size: 0.9em; /* Уменьшаем шрифт инструкций */
+        }
     }
 </style>

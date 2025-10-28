@@ -31,6 +31,7 @@ import Button from '@/components/Button.vue';
         display: inline-flex;
         align-items: center;
         background-color: white;
+        color: black;
         justify-content: center;
         padding: 12px 25px; 
         border: none;
@@ -41,18 +42,15 @@ import Button from '@/components/Button.vue';
         text-decoration: none; 
         white-space: nowrap; 
         transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); 
-        box-shadow: 0 5px 15px rgba(212, 15, 125, 0.4);
     }
 
     .animated-master-button:hover {
-        background: rgba(212, 15, 125, 1);
-        box-shadow: 0 8px 20px rgba(212, 15, 125, 0.6); 
+        background: rgb(156, 156, 156);
         transform: translateY(-3px); 
     }
 
     .animated-master-button:active {
         transform: translateY(0); 
-        box-shadow: 0 2px 5px rgba(212, 15, 125, 0.2); 
     }
 
 
@@ -74,10 +72,12 @@ import Button from '@/components/Button.vue';
     .footer {
         display: flex;
         background-color: rgba(212, 15, 125, 1);
-        align-items: flex-end;
+        align-items: center;
         width: 100%;
         text-align: center;
-        margin-bottom: 50px;    
+        margin-bottom: 50px;   
+        justify-content: space-around; 
+        flex-wrap: wrap;
     }
     .cont h1 {
         font-size: 2em;
@@ -85,11 +85,11 @@ import Button from '@/components/Button.vue';
         text-align: center;
         margin-top: 50px;
     }
-    .footer div {
+    .footer > div {
         display: flex;
         flex-direction: column;
         align-items: center;
-        flex-basis: 100%;
+        flex-basis: 33%;
         text-align: center;
     }
     .footer p {
@@ -100,8 +100,9 @@ import Button from '@/components/Button.vue';
         font-size: 0.9em;
     }
     .cont > p {
-        font-size: 1.2em;
+        font-size: clamp(0.9rem, 1.3vw, 2rem);
         margin-bottom: 20px;
+        text-align: center;
     }
     .w-btn {
         background-color: green;

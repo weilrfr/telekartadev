@@ -1,6 +1,5 @@
 <script setup>
-// Здесь могут быть импорты, но для этой страницы они не требуются.
-// PrimeIcons используются напрямую в шаблоне через классы.
+import Button from '@/components/Button.vue'
 </script>
 
 <template>
@@ -38,7 +37,9 @@
                 <p>Свяжитесь с нами, чтобы вызвать специалиста в удобное для вас время!</p>
                 <a href="https://wa.me/+77471543737?text=Здравствуйте!%20Я%20хочу%20активировать%20карту%20Телекарта." target="_blank" rel="noopener noreferrer" class="button">Вызвать мастера</a>
             </div>
-
+            <div>
+                <Button text="Вернуться на главную" @click="$router.push('/')"/>
+            </div>
         </div>
     </section>
 </template>
@@ -115,6 +116,7 @@
     .call-to-action {
         flex-basis: 100%;
         margin-top: 20px;
+        margin-bottom: 50px;
         padding: 30px;
         background-color: #ffe6fd; 
         border-radius: 12px;

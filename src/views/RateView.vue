@@ -68,10 +68,10 @@ const currentRate = computed(() => {
     }
 
     .multiroom-info p {
-    margin-bottom: 15px;
-    line-height: 1.9;
-    font-size: 1.2rem; 
-    color: #333;
+        margin-bottom: 15px;
+        line-height: 1.9;
+        font-size: 1.2rem; 
+        color: #333;
     }
     .multiroom-info p:last-child {
         margin-bottom: 0;

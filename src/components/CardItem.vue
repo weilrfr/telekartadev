@@ -39,18 +39,35 @@
         transition: transform 0.35s ease;
         text-align: center;
         margin-top: 20px;
+        cursor: pointer; /* Добавил, чтобы показать, что карточка кликабельна */
     }
     .card:hover {
         transform: translateY(-10px);
     }
+    
     .card img {
-        width: 100%;
-        height: auto;
+        /* Изменено с width: 100% для лучшей адаптивности, если изображение меньше 100% контейнера */
+        max-width: 100%; 
+        height: auto; 
         margin-bottom: 20px;
+        display: block; /* Убеждаемся, что блочный элемент */
+        margin-left: auto; /* Центрирование изображения */
+        margin-right: auto;
     }
     .card h3 {
         font-size: 1.5em;
         margin-bottom: 20px;
         color: rgba(212, 15, 125, 1);
+        /* Добавил адаптивный размер шрифта для маленьких экранов */
+    }
+
+    /* Адаптивные стили для текста внутри карточки */
+    @media (max-width: 480px) {
+        .card {
+            padding: 15px;
+        }
+        .card h3 {
+            font-size: 1.3em;
+        }
     }
 </style>
