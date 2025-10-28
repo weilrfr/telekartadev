@@ -108,6 +108,7 @@ const telekartaFrequencies = [
         padding: 10px 15px;
         text-align: center;
         white-space: nowrap;
+        font-size: clamp(0.7rem, 1.1vw, 3rem);
     }
     th {
         background-color: #f2f2f2;
@@ -157,17 +158,15 @@ const telekartaFrequencies = [
 
     @media (max-width: 600px) {
         th, td {
-            /* Уменьшаем горизонтальный padding для экономии места на узких экранах */
-            padding: 8px 10px; 
-            font-size: 0.85em; /* Немного уменьшаем шрифт */
+            padding: 8px 0px;
         }
         
         .map h1 {
-            font-size: 1.5em; /* Улучшение адаптивности для заголовка */
+            font-size: 1.5em;
         }
         
         .instructions a p {
-             font-size: 0.9em; /* Уменьшаем шрифт инструкций */
+             font-size: 0.9em;
         }
     }
 </style>
