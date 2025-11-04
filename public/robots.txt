@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /wp-admin/
+Disallow: /wp-content/plugins/
+Disallow: /cgi-bin/
+Disallow: /search/
+Host: [telekartatvpay.kz]
+Sitemap: [telekartatvpay.kz/sitemap.xml]
