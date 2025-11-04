@@ -37,7 +37,7 @@ export const useRates = () => {
             title: 'Тариф Премьер',
         },
         {
-            id: 'premierasd',
+            id: 'narodny-premier',
             img: NarPremier,
             imgСhannels: PremierСhannels,
             title: 'Народный премьер',
