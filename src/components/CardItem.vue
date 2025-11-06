@@ -27,6 +27,9 @@
     </section>
 </template>
 <style scoped>
+    .section {
+        height: 100%;
+    }
     .card {
         display: flex;
         flex-direction: column;

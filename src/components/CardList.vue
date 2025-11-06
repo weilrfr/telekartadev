@@ -30,42 +30,30 @@
         margin-top: 50px;
     }
 
-    /* Удалил 'div' и оставил только селектор для элемента-обертки карточки */
     .cards > :deep(div) { 
-        /* Базовая ширина для 4-х карточек в ряд на больших экранах, с учетом margin/gap */
         flex-basis: 23%; 
-        margin-bottom: 20px; /* Отступ между рядами */
+        margin-bottom: 20px;
     }
-    
-    /* Сохраняем специфическое уменьшение изображений, используя более современный селектор */
+
     .cards > :deep(div:nth-child(5) .card img),
     .cards > :deep(div:nth-child(6) .card img),
     .cards > :deep(div:nth-child(7) .card img) {
         width: 50%;
     }
-
-    /* ---------------------------------------------------- */
-    /* МЕДИА-ЗАПРОСЫ                      */
-    /* ---------------------------------------------------- */
-
-    /* Планшеты (прибл. 1024px и меньше): 3 карточки в ряд */
-
-
-    /* Более маленькие планшеты / большие телефоны (прибл. 768px и меньше): 2 карточки в ряд */
+    .cards > :deep(div:nth-child(7) h3) {
+        font-size: 20px;
+    }
     @media (max-width: 1024px) {
         .cards {
-            justify-content: space-around; /* или space-evenly */
+            justify-content: space-around; 
         }
         .cards > :deep(div) {
-            /* 50% - отступы, чтобы уместиться в 2 колонки */
             flex-basis: 45%; 
         }
     }
 
-    /* Телефоны (прибл. 480px и меньше): 1 карточка в ряд */
     @media (max-width: 480px) {
         .cards > :deep(div) {
-            /* 100% для одной колонки */
             flex-basis: 95%;
         }
     }

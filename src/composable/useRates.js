@@ -51,7 +51,7 @@ export const useRates = () => {
             id: 'doppaketi',
             img: Doppaket,
             imgСhannels: DoppaketiChannels,
-            title: 'Доп пакеты',
+            title: 'Допополнительные пакеты',
         }
     ];
     return {rates};

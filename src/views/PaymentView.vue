@@ -13,7 +13,7 @@
         </div>
         <div class="payment-info">
             <div class="info">
-                <p>Для этого необходимо отправить номер вашей Телекарты со штрихкодом на один из номеров ватсап</p>
+                <p>Для этого необходимо отправить номер вашей Телекарты со штрихкодом на один из номеров Whatsapp</p>
                 <p>Или позвонить по одному из номеров снизу</p>
                 <p>Ваша карта будет активирована в течение 1 часа с момента оплаты</p>
             </div>
@@ -30,12 +30,12 @@
                     </div>
                     <div class="w-button">
                         <a href="https://wa.me/+77772568800?text=Здравствуйте!%20Я%20хочу%20активировать%20карту%20Телекарта." target="_blank" rel="noopener noreferrer">
-                            <button>Написать на ватсап<i class="pi pi-whatsapp"></i></button>
+                            <button>Написать на Whatsapp<i class="pi pi-whatsapp"></i></button>
                         </a>
                     </div>
                     <div class="w-button">
                         <a href="https://wa.me/+77471543737?text=Здравствуйте!%20Я%20хочу%20активировать%20карту%20Телекарта." target="_blank" rel="noopener noreferrer">
-                            <button>Написать на ватсап<i class="pi pi-whatsapp"></i></button>
+                            <button>Написать на Whatsapp<i class="pi pi-whatsapp"></i></button>
                         </a>
                     </div>
                 </div>
